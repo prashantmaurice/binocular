@@ -39,6 +39,9 @@ The pretrained model can be found here -  https://github.com/tensorflow/models/b
 ## Camera Perspective Tracking
 
 Perspective stitching require us to build 3D Perspective Shift. When seen from 2D, Scene perspective shift is generally non-linear, but frame by frame Perspective Map can be assumed to be linear in 2D and hence we can use it to stitch 2 Successive Frames. These matches are now combined using Nearest Neighbour Search over IOU on top of Transposed View. This uses Object Detection Boxes and uses temporal information to increase accuracy. 
+
+![Alt Text](https://github.com/prashantmaurice/binocular/blob/master/data/traces.gif)
+
 ### Problems Solved in This approach:
  * If ProductX was appearing from 50-70 frames under different perspectives,  we should be able to stitch them into a single product Trail
  * If ProductX was appearing for 0-30 frames and disappear from 30-50 and reappear after that , we should have the ability to stitch the two object trails together
