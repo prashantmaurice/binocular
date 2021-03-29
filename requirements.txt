@@ -99,7 +99,7 @@ py==1.5.2
 py4j==0.10.6
 pycparser==2.18
 pydot==1.2.4
-Pygments==2.2.0
+Pygments==2.7.4
 pykafka==2.7.0
 pymongo==3.4.0
 pyOpenSSL==17.5.0
